@@ -1,0 +1,9 @@
+{
+  "inventory": [],
+  "transactions": [],
+  "customers": [],
+  "price_history": {},
+  "next_item_id": 1,
+  "next_customer_id": 1,
+  "next_transaction_id": 1
+}
