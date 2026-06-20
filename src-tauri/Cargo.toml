@@ -1,0 +1,27 @@
+[package]
+name = "tauri-app"
+version = "0.1.0"
+description = "A Pakistani Hardware Shop Inventory & Easy Khata System"
+authors = ["Antigravity"]
+edition = "2021"
+
+[lib]
+name = "tauri_app_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sysinfo = "0.31.2"
+windows-service = "0.7.0"
+rusqlite = { version = "0.32.0", features = ["bundled"] }
+candle-core = "0.8.2"
+candle-transformers = "0.8.2"
+hf-hub = "0.4.1"
+byteorder = "1.5.0"
+base64 = "0.22.1"
